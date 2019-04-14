@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style >
+	body { margin:0px; background-color:#000;color:#FFF}
+	#d1 { float:left ; background-color:inherit; height:974px ; width:15%;position:fixed;left:0;top:0}
+	#d2 { float:left ; background-color:inherit; height:auto ; width:70% ; padding-top:100px;padding-left:30px;; box-sizing:border-box ;margin-left:15% ;padding-bottom:80px; }
+	#d3 { float:left ; background-color:inherit; height:974px ; width:15%;position:fixed ;right:0;top:0; box-sizing:border-box ; text-align:right ; padding-right:30px ;padding-top:80px;}
+	#d1 img { width:180px; padding-top:50px; padding-left:40px;}
+	
+	#ao1 {width: 470px; height: 800px; float: left; text-align:center }
+	#ao2 {width: 470px; height: 800px; float: left; text-align:center }
+	#ao3 {width: 470px; height: 800px; float: left; text-align:center}
+	#ao4 {width: 470px; height: 800px; float: left; text-align:center ; margin-left:300px}
+	#ao5 {width: 470px; height: 800px; float: left; text-align:center}
+	#chu1 {width: 100% ; text-align: center ;  color: white ;}
+	
+	li {list-style-type:none }
+	#ul1 {font-size:24px;}
+	#ul2 {font-size:16px} 
+	.menu-link {color:#FFF ; text-decoration:none;}
+	.menu-link:hover{color:#F33 ; transition:all 0.6s}
+	
+	#showdetail{ background-color:#000 ; z-index:2 ; width:1600px ; height:1042px;left:300px ; top:0px; position:fixed;display:none}
+	#showdetail div {float:left}
+	#img {margin-left:100px; margin-top:100px ; width:550px ; height:800px}
+	#img img {height:800px; }
+	#des {margin-top:150px; margin-left:0px; text-align:center ; font-size:18px ;width:950px; box-sizing:border-box}
+	#p {margin-left:100px ; font-size:22px ;width:800px; box-sizing:border-box}
+	#p select {height:30px;width:50px}
+	#infor { margin-left:100px ; font-size:20px ; margin-top:50px;width:800px; box-sizing:border-box }
+	#showdetail input { margin-top:20px; margin-left:300px; width:150px; height:60px ; background-color:#000 ; border:solid 1px black ; color:#FFF ; font-size:18px ; border-radius:5%}
+	#showdetail input:hover {background-color:#666;transition:all 0.8s}
+	#close {position:fixed ; top:5px;left:390px}
+
+	#footer {float:left; width:100% ; height:40px  ;position:fixed ; bottom:0px;background-color:#666  ;left:0  }
+	#footer:hover{background-color:inherit ; transition:all 0.8s}
+	.style4 {float:left ; border-right:solid 2px white;padding-left:10px; padding-right:10px; color:#FFF; margin-top:13px;font-size:18px}
+	.footer-link {color:#FFF;text-decoration:none;}
+	.footer-link:hover {color:#999 ; transition:all 0.6s  } 
+</style>
+<script src="Detail.js"></script>
+</head>
+
+<body>
+<div id="d1"><a href="../HomePage/HomePage.html"><img src="tum.jpg" /></a></div>
+<div id="d2">
+		<div id="ao1" onclick="show()">
+			<img src="ao1.jpg" width="450" height="630">
+			<p id="chu1"><font color="white" size="+2">GRODY TSHIRT UPGRADE – BLACK</p>
+			<p id="chu1">280,000 VNĐ</p></font>
+		</div>
+		<div id="ao2" onclick="show()">
+			<img src="ao2.jpg" width="450" height="630">
+			<p id="chu1"><font color="white" size="+2">HEXAGON TSHIRT – BLACK</p>
+			<p id="chu1">280,000 VNĐ</p></font>
+		</div>
+		<div id="ao3" onclick="show()">
+			<img src="ao3.jpg" width="450" height="630">
+		<p id="chu1"><font color="white" size="+2">FREDDY LONG SLEEVES T-SHIRT</p>
+			<p id="chu1" >290,000 VNĐ</p></font>
+		</div>
+		<div id="ao4" onclick="show()">
+			<img src="ao4.jpg" width="450" height="630">
+			<p id="chu1"><font color="white" size="+2">SIMON SWEATER BLACK</p>
+			<p id="chu1">420,000 VNĐ</p></font>
+		</div>
+		<div id="ao5" onclick="show()">
+			<img src="ao5.jpg" width="450" height="630">
+			<p id="chu1"><font color="white" size="+2">ALEX SWEATER BLACK</p>
+			<p id="chu1" >420,000 VNĐ</p></font>
+		</div>	
+</div>
+<div id="d3">
+<ul id="ul1">
+	<li> <a href="T-shirt1.html" class="menu-link">Clothes</a>
+    	<ul id="ul2">
+        	<li><a href="T-shirt1.html" class="menu-link">T-Skirt</a></li>
+            <li><a href="../Pants/Pants1.html" class="menu-link">Pant</a></li>
+            <li><a href="../jacket/jacket2.html" class="menu-link">Jacket</a></li>
+            <li><a href="../Accessories/accessories1.html" class="menu-link">Accessories</a></li>
+        </ul>
+    </li>
+    <li><a href="../History/History.html" class="menu-link"> History</a></li>
+    <li><a href="../Galerry/Galerry.html" class="menu-link"> Gallery</a></li>
+    <li><a href="../Contact/Contact.html" class="menu-link"> Contact</a></li>
+</ul>
+</div>
+<div id="showdetail">
+    <div id="img"><img src="" id="anh"/></div>
+    <div id="des"></div>
+    <div id="infor">
+    </div>
+    <div id="p"><p>Size:
+    <select>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+    </select></p>
+    </div>
+    <input type="button" value="Add vao gio hang" onclick="added()"/>
+    <p id="close" onclick="closeDetail()" style="cursor:pointer">[X]</p>
+</div>
+<div id="footer">
+<div class="style4">COPYRIGHT 2012 TUMMACHINES</div>
+<div class="style4"><a href="https://www.facebook.com/huy.nguyen0257" target="_top" class="footer-link">FACEBOOK</a></div>
+<div class="style4"><a href="https://www.instagram.com/mnchuoii/" target="_top" class="footer-link">INSTAGRAM</a></div>
+<div class="style4"><a href="../Members/Members.html" target="_top" class="footer-link" >MEMBERS</a></div>
+</div> 
+</body>
+</html>
